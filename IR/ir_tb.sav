@@ -1,0 +1,28 @@
+[*]
+[*] GTKWave Analyzer v3.3.37 (w)1999-2012 BSI
+[*] Thu Apr 23 09:42:40 2015
+[*]
+[dumpfile] "/rzhome/op/padminl/VISCY/ir_tb.ghw"
+[dumpfile_mtime] "Thu Apr 23 09:24:09 2015"
+[dumpfile_size] 812
+[savefile] "/rzhome/op/padminl/VISCY/ir_tb.sav"
+[timestart] 0
+[size] 1920 1141
+[pos] -1 -33
+*-23.430767 56190000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] top.
+[treeopen] top.ir_tb.
+[treeopen] top.ir_tb.u_ir.
+[sst_width] 224
+[signals_width] 228
+[sst_expanded] 1
+[sst_vpaned_height] 335
+@28
+top.ir_tb.u_ir.clk
+top.ir_tb.u_ir.load
+@22
+#{top.ir_tb.u_ir.ir_in[15:0]} top.ir_tb.u_ir.ir_in[15] top.ir_tb.u_ir.ir_in[14] top.ir_tb.u_ir.ir_in[13] top.ir_tb.u_ir.ir_in[12] top.ir_tb.u_ir.ir_in[11] top.ir_tb.u_ir.ir_in[10] top.ir_tb.u_ir.ir_in[9] top.ir_tb.u_ir.ir_in[8] top.ir_tb.u_ir.ir_in[7] top.ir_tb.u_ir.ir_in[6] top.ir_tb.u_ir.ir_in[5] top.ir_tb.u_ir.ir_in[4] top.ir_tb.u_ir.ir_in[3] top.ir_tb.u_ir.ir_in[2] top.ir_tb.u_ir.ir_in[1] top.ir_tb.u_ir.ir_in[0]
+@23
+#{top.ir_tb.u_ir.ir_out[15:0]} top.ir_tb.u_ir.ir_out[15] top.ir_tb.u_ir.ir_out[14] top.ir_tb.u_ir.ir_out[13] top.ir_tb.u_ir.ir_out[12] top.ir_tb.u_ir.ir_out[11] top.ir_tb.u_ir.ir_out[10] top.ir_tb.u_ir.ir_out[9] top.ir_tb.u_ir.ir_out[8] top.ir_tb.u_ir.ir_out[7] top.ir_tb.u_ir.ir_out[6] top.ir_tb.u_ir.ir_out[5] top.ir_tb.u_ir.ir_out[4] top.ir_tb.u_ir.ir_out[3] top.ir_tb.u_ir.ir_out[2] top.ir_tb.u_ir.ir_out[1] top.ir_tb.u_ir.ir_out[0]
+[pattern_trace] 1
+[pattern_trace] 0
