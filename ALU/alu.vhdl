@@ -12,7 +12,7 @@ entity ALU is
 	);
 end ALU;
 
-architecture BEHAVIOR of ALU is
+architecture RTL of ALU is
 begin
 	process(a,b,sel)
 	

@@ -19,7 +19,7 @@ architecture TESTBENCH of ALU_TB is
   end component;
 
   -- Configuration...
-  for IMPL: ALU use entity WORK.ALU(BEHAVIOR);
+  for IMPL: ALU use entity WORK.ALU(RTL);
   
   
   signal a,b,y: std_logic_vector(15 downto 0);
