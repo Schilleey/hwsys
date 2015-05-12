@@ -37,7 +37,8 @@ begin
 					when s_id	 => 
 						if ir(15 downto 14) = "00" then state <= s_alu; else
 							if ir(15 downto 14) = "01" and ir(12 downto 11) = "00" then state <= s_ldil; else
-								if ir(15 downto 11) = "01-01" then state <= s_ldih; --Versuch mit don't care
+								--if ir(15 downto 11) = "01-01" then state <= s_ldih; --Versuch mit don't care, doesn't work (probably? :P)
+								if ir(15 downto 14) = "01" and ir(12 downto 11) = "01" then state <= s_ldih;
 								end if; 
 							end if; 
 						end if;
@@ -65,7 +66,6 @@ begin
 		c_ir_load <= '0';
 		c_mem_rd <= '0';
 		c_mem_wr <= '0';
-		c_adr_pc_not_reg <= '0';
 		
 		-- zustandsabhängige Belegung...
 		case state is
