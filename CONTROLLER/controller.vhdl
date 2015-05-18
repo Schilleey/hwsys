@@ -42,6 +42,9 @@ begin
 								end if; 
 							end if; 
 						end if;
+					when s_alu 	=> state <= s_if1;
+					when s_ldil	=> state <= s_if1;
+					when s_ldih	=> state <= s_if1;
 					when others => null;      
 				end case;
 			end if;

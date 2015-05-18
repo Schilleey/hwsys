@@ -14,7 +14,7 @@ end CPU;
 
 architecture RTL of CPU is
 	-- Component declarations...
-	component alu is
+	component ALU is
 		port (
 			a : in std_logic_vector (15 downto 0); 	-- Eingang A
 			b : in std_logic_vector (15 downto 0); 	-- Eingang B
@@ -25,50 +25,51 @@ architecture RTL of CPU is
 	end component;
 	
 	component IR is
-	port ( clk: in std_logic;
-         load: in std_logic;
-         ir_in: in std_logic_vector (15 downto 0);
-         ir_out: out std_logic_vector (15 downto 0)
-       );
+		port ( 
+			clk: in std_logic;
+			load: in std_logic;
+			ir_in: in std_logic_vector (15 downto 0);
+			ir_out: out std_logic_vector (15 downto 0)
+		);
     end component;
 	
 	component PC is
-	port (
-		clk: in std_logic;
-		reset, inc, load: in std_logic;
-		pc_in: in std_logic_vector (15 downto 0);
-		pc_out: out std_logic_vector (15 downto 0)
-	);
+		port (
+			clk: in std_logic;
+			reset, inc, load: in std_logic;
+			pc_in: in std_logic_vector (15 downto 0);
+			pc_out: out std_logic_vector (15 downto 0)
+		);
 	end component;
 	
 	component REGFILE is
-	port (
-		clk: in std_logic; --takteingang
-		in_data: in std_logic_vector (15 downto 0); --das soll in ein register rein
-		in_sel: in std_logic_vector (2 downto 0); 
-		out0_data: out std_logic_vector (15 downto 0); --gibt auch registerinhalt aus
-		out0_sel: in std_logic_vector (2 downto 0); 
-		out1_data: out std_logic_vector (15 downto 0); --gibt registerinhalt aus
-		out1_sel: in std_logic_vector (2 downto 0); -- wird in integer umgewandelt um unser array zu adressieren
-		load_lo, load_hi: in std_logic -- vordere hälfte einlesen oder untere hälfte eines registers
-	);
+		port (
+			clk: in std_logic; --takteingang
+			in_data: in std_logic_vector (15 downto 0); --das soll in ein register rein
+			in_sel: in std_logic_vector (2 downto 0); 
+			out0_data: out std_logic_vector (15 downto 0); --gibt auch registerinhalt aus
+			out0_sel: in std_logic_vector (2 downto 0); 
+			out1_data: out std_logic_vector (15 downto 0); --gibt registerinhalt aus
+			out1_sel: in std_logic_vector (2 downto 0); -- wird in integer umgewandelt um unser array zu adressieren
+			load_lo, load_hi: in std_logic -- vordere hälfte einlesen oder untere hälfte eines registers
+		);
 	end component;
 	
 	component CONTROLLER is
-	port (
-	-- Statussignale...
-		clk, reset,		
-		ir: in std_logic_vector (15 downto 0);
-		ready, zero: in std_logic;
-		-- Steuersignale...
-		c_reg_ldmem, c_reg_ldi, -- Auswahl beim Register-Laden
-		c_regfile_load_lo, -- Steuersignale Registerfile
-		c_regfile_load_hi,
-		c_pc_load, c_pc_inc, -- Steuereingänge PC
-		c_ir_load, -- Steuereingang IR
-		c_mem_rd, c_mem_wr, -- Signale zum Speicher
-		c_adr_pc_not_reg: out std_logic -- Auswahl Adress-Quelle
-	);
+		port (
+		-- Statussignale...
+			clk, reset: in std_logic;		
+			ir: in std_logic_vector (15 downto 0);
+			ready, zero: in std_logic;
+			-- Steuersignale...
+			c_reg_ldmem, c_reg_ldi, -- Auswahl beim Register-Laden
+			c_regfile_load_lo, -- Steuersignale Registerfile
+			c_regfile_load_hi,
+			c_pc_load, c_pc_inc, -- Steuereingänge PC
+			c_ir_load, -- Steuereingang IR
+			c_mem_rd, c_mem_wr, -- Signale zum Speicher
+			c_adr_pc_not_reg: out std_logic -- Auswahl Adress-Quelle
+		);
 	end component;
 	
 	-- Configuration...
@@ -99,6 +100,7 @@ architecture RTL of CPU is
 	signal c_regfile_load_lo, c_regfile_load_hi: std_logic;
 	signal c_reg_ldmem ,c_reg_ldi: std_logic;
 	signal c_adr_pc_not_reg: std_logic;
+	signal c_mem_rd, c_mem_wr: std_logic;
 	
 	-- Memory
 	signal mem_data_in, mem_data_out: std_logic_vector (15 downto 0);
@@ -146,7 +148,7 @@ begin
 		clk => clk,
 		reset => reset,
 		
-		ir => ir_out(15 downto 11),
+		ir => ir_out(15 downto 0), --(15 downto 11),
 		ready => ready,
 		zero => alu_zero,
 	
@@ -162,8 +164,8 @@ begin
 		-- Steuereingang IR
 		c_ir_load => c_ir_load,
 		-- Signale zum Speicher
-		c_mem_rd => rd, 
-		c_mem_wr => wr,
+		c_mem_rd => c_mem_rd, 
+		c_mem_wr => c_mem_wr,
 		-- Auswahl Adress-Quelle
 		c_adr_pc_not_reg => c_adr_pc_not_reg
 		
@@ -189,17 +191,19 @@ begin
 	end process;
 	
 	-- Multiplexer vor Regfile
-	process (ir_out, data, alu_y)
+	process (ir_out, data, alu_y, c_reg_ldi, c_reg_ldmem )
 	begin
 		if c_reg_ldi = '1' then
 			regfile_in_data <= ir_out;
 		elsif c_reg_ldmem = '1' then	
 			regfile_in_data <= data;
-		elsif NOT (c_reg_ldi + c_reg_ldmem) then
+		elsif not (c_reg_ldi and c_reg_ldmem) = '1' then
 			regfile_in_data <= alu_y;
 		end if;
 	end process;
 	
 	mem_data_in <= data; -- Dateneingang
+	wr <= c_mem_wr; --?? weiterleitung an CPU Ausgang
+	rd <= c_mem_rd; --??
 	
 end RTL;

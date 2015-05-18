@@ -37,7 +37,7 @@ begin
 			reg(to_integer( unsigned(in_sel))) (7 downto 0) <= in_data(7 downto 0); --array-stelle von 0 bis 7 aus in_data
 		end if;
 		if (load_hi = '1') then
-			reg(to_integer( unsigned(in_sel))) (15 downto 8) <= in_data(15 downto 8);
+			reg(to_integer( unsigned(in_sel))) (15 downto 8) <= in_data(7 downto 0);
 		end if;
 	end if;	
 end process; --ausgelesen wird immer irgentwas
