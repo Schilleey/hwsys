@@ -41,15 +41,13 @@ XOR   r3, r0, r1 ; => 12
 XOR   r3, r3, r3
 NOT   r3, r0     ; => 1111111111110111
 
-;TODO!
+
 ;LD
 XOR   r3, r3, r3
-XOR   r1, r1, r1
-LDIH  r1, 0xFF 
-LDIL  r1, 0xFF   ; => 1111111111111111
-LD  r3, [r1]    ; => 1111111111111111
+XOR   r1, r1, r1  
+LD  r3, [r1]  
 
-;TODO!
+
 ;ST
 XOR   r3, r3, r3
 XOR   r1, r1, r1
@@ -91,11 +89,6 @@ LDIH r1, loopjz>>8
 JZ r2, r1
 LDIL r3, 0xFF
 loopjz: ; r3 darf nicht gesetzt werden!
-
-
-
-
-
-
+XOR   r1, r1, r1
 
 .end
