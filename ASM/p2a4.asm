@@ -29,4 +29,6 @@ loop: ADD   r3, r3, r1 ; Addieren, r3 = r3 + r1
 	  JNZ   r2, r5
 	  ST    [r0], r3   ; Ergebnis speichern
 	  
+	  HALT
+	  
 	  .end

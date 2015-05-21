@@ -194,7 +194,7 @@ begin
 	process (ir_out, data, alu_y, c_reg_ldi, c_reg_ldmem )
 	begin
 		if c_reg_ldi = '1' then
-			regfile_in_data <= ir_out;
+			regfile_in_data <= ir_out(7 downto 0) & ir_out(7 downto 0);
 		elsif c_reg_ldmem = '1' then	
 			regfile_in_data <= data;
 		elsif not (c_reg_ldi and c_reg_ldmem) = '1' then
@@ -203,6 +203,7 @@ begin
 	end process;
 	
 	mem_data_in <= data; -- Dateneingang
+	mem_data_out <= regfile_out1_data; -- Datenausgang
 	wr <= c_mem_wr; --?? weiterleitung an CPU Ausgang
 	rd <= c_mem_rd; --??
 	

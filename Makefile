@@ -14,23 +14,33 @@
 
 GHDL = ghdl
 
-SRC = REGFILE/regfile.vhdl IR/ir.vhdl PC/pc.vhdl ALU/alu.vhdl CONTROLLER/controller.vhdl CPU/CPU.vhdl CPU/CPU_tb.vhdl
+SRC = REGFILE/regfile.vhdl IR/ir.vhdl PC/pc.vhdl ALU/alu.vhdl CONTROLLER/controller.vhdl CPU/CPU.vhdl CPU/CPU_TB.vhdl
 OBJ = $(SRC:.vhdl=.o)
+OBJL = regfile.o ir.o pc.o alu.o controller.o CPU.o CPU_TB.o
 TB = cpu_tb
 
 ## Build ##
 
-analyse: $(SRC)
+lanalyse: $(SRC)
 	$(GHDL) -a $(SRC)
-	
-elaborate: analyse
+
+wanalyse: $(SRC)
+	$(GHDL) -a $(SRC)
+
+lelaborate: $(OBJL)
 	$(GHDL) -e $(TB)
 	
-lwave: elaborate
+welaborate: analyse
+	$(GHDL) -e $(TB)
+	
+lwave: lelaborate
 	./$(TB) --wave=$(TB).ghw
 
-wwave: elaborate
+wwave: welaborate
 	$(GHDL) -r $(TB) --wave=$(TB).ghw
+
+%.o: %.vhdl
+	$(GHDL) -a $<
 	
 ### Clean ###
 
