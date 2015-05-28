@@ -1,0 +1,67 @@
+Release 10.1.03 ngdbuild K.39 (lin)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Command Line: /opt/xilinx-ise-10_1_foundation/ISE/bin/lin/unwrapped/ngdbuild -uc
+/opt/ees/lib/viscy.ucf -sd . /opt/ees/lib/viscy
+
+Reading NGO file "/opt/ees/lib/viscy.ngc" ...
+Loading design module "./cpu.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Applying constraints in "/opt/ees/lib/viscy.ucf" to the design...
+INFO:NgdBuild:928 - A pullup 'U_SYSTEM/cpu_data<0>.PULLUP' was added to net
+   'U_SYSTEM/cpu_data<0>'
+INFO:NgdBuild:928 - A pullup 'U_SYSTEM/cpu_data<10>.PULLUP' was added to net
+   'U_SYSTEM/cpu_data<10>'
+INFO:NgdBuild:928 - A pullup 'U_SYSTEM/cpu_data<11>.PULLUP' was added to net
+   'U_SYSTEM/cpu_data<11>'
+INFO:NgdBuild:928 - A pullup 'U_SYSTEM/cpu_data<12>.PULLUP' was added to net
+   'U_SYSTEM/cpu_data<12>'
+INFO:NgdBuild:928 - A pullup 'U_SYSTEM/cpu_data<13>.PULLUP' was added to net
+   'U_SYSTEM/cpu_data<13>'
+INFO:NgdBuild:928 - A pullup 'U_SYSTEM/cpu_data<14>.PULLUP' was added to net
+   'U_SYSTEM/cpu_data<14>'
+INFO:NgdBuild:928 - A pullup 'U_SYSTEM/cpu_data<15>.PULLUP' was added to net
+   'U_SYSTEM/cpu_data<15>'
+INFO:NgdBuild:928 - A pullup 'U_SYSTEM/cpu_data<1>.PULLUP' was added to net
+   'U_SYSTEM/cpu_data<1>'
+INFO:NgdBuild:928 - A pullup 'U_SYSTEM/cpu_data<2>.PULLUP' was added to net
+   'U_SYSTEM/cpu_data<2>'
+INFO:NgdBuild:928 - A pullup 'U_SYSTEM/cpu_data<3>.PULLUP' was added to net
+   'U_SYSTEM/cpu_data<3>'
+INFO:NgdBuild:928 - A pullup 'U_SYSTEM/cpu_data<4>.PULLUP' was added to net
+   'U_SYSTEM/cpu_data<4>'
+INFO:NgdBuild:928 - A pullup 'U_SYSTEM/cpu_data<5>.PULLUP' was added to net
+   'U_SYSTEM/cpu_data<5>'
+INFO:NgdBuild:928 - A pullup 'U_SYSTEM/cpu_data<6>.PULLUP' was added to net
+   'U_SYSTEM/cpu_data<6>'
+INFO:NgdBuild:928 - A pullup 'U_SYSTEM/cpu_data<7>.PULLUP' was added to net
+   'U_SYSTEM/cpu_data<7>'
+INFO:NgdBuild:928 - A pullup 'U_SYSTEM/cpu_data<8>.PULLUP' was added to net
+   'U_SYSTEM/cpu_data<8>'
+INFO:NgdBuild:928 - A pullup 'U_SYSTEM/cpu_data<9>.PULLUP' was added to net
+   'U_SYSTEM/cpu_data<9>'
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+Checking Partitions ...
+
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 74316 kilobytes
+
+Writing NGD file "viscy.ngd" ...
+
+Writing NGDBUILD log file "viscy.bld"...

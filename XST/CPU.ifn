@@ -1,0 +1,11 @@
+set -xsthdpdir xst_work
+run
+-ifn CPU.prj
+-ofn CPU
+-top CPU
+-iobuf no
+-p xc3s700a-fg484-4
+-ifmt vhdl
+-opt_mode Speed
+-opt_level 1
+-rtlview yes

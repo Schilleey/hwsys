@@ -1,0 +1,119 @@
+Release 10.1.03 - Bitgen K.39 (lin)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+Loading device for application Rf_Device from file '3s700a.nph' in environment
+/opt/xilinx-ise-10_1_foundation/ISE.
+   "viscy" is an NCD, version 3.2, device xc3s700a, package fg484, speed -4
+Opened constraints file viscy.pcf.
+
+Thu May 28 13:11:10 2015
+
+/opt/xilinx-ise-10_1_foundation/ISE/bin/lin/unwrapped/bitgen -w -g compress -g configrate:8 -g next_config_addr:0x000000 -g en_suspend:yes -g sw_clk:internalclk -g drive_awake:yes -g startupclk:jtagclk viscy_routed.ncd viscy_routed viscy.pcf 
+
+Summary of Bitgen Options:
++----------------------+----------------------+
+| Option Name          | Current Setting      |
++----------------------+----------------------+
+| Compress             | (Enabled)            |
++----------------------+----------------------+
+| Readback             | (Not Specified)*     |
++----------------------+----------------------+
+| CRC                  | Enable*              |
++----------------------+----------------------+
+| DebugBitstream       | No*                  |
++----------------------+----------------------+
+| ConfigRate           | 8                    |
++----------------------+----------------------+
+| StartupClk           | JtagClk              |
++----------------------+----------------------+
+| DonePin              | Pullup*              |
++----------------------+----------------------+
+| ProgPin              | Pullup*              |
++----------------------+----------------------+
+| TckPin               | Pullup*              |
++----------------------+----------------------+
+| TdiPin               | Pullup*              |
++----------------------+----------------------+
+| TdoPin               | Pullup*              |
++----------------------+----------------------+
+| TmsPin               | Pullup*              |
++----------------------+----------------------+
+| UnusedPin            | Pulldown*            |
++----------------------+----------------------+
+| GWE_cycle            | 6*                   |
++----------------------+----------------------+
+| GTS_cycle            | 5*                   |
++----------------------+----------------------+
+| LCK_cycle            | NoWait*              |
++----------------------+----------------------+
+| DONE_cycle           | 4*                   |
++----------------------+----------------------+
+| Persist              | No*                  |
++----------------------+----------------------+
+| DriveDone            | No*                  |
++----------------------+----------------------+
+| DonePipe             | No*                  |
++----------------------+----------------------+
+| Security             | None*                |
++----------------------+----------------------+
+| UserID               | 0xFFFFFFFF*          |
++----------------------+----------------------+
+| ActivateGclk         | No*                  |
++----------------------+----------------------+
+| ActiveReconfig       | No*                  |
++----------------------+----------------------+
+| PartialMask0         | (Not Specified)*     |
++----------------------+----------------------+
+| PartialMask1         | (Not Specified)*     |
++----------------------+----------------------+
+| PartialMask2         | (Not Specified)*     |
++----------------------+----------------------+
+| PartialGclk          | (Not Specified)*     |
++----------------------+----------------------+
+| PartialLeft          | (Not Specified)*     |
++----------------------+----------------------+
+| PartialRight         | (Not Specified)*     |
++----------------------+----------------------+
+| drive_awake          | Yes                  |
++----------------------+----------------------+
+| Reset_on_err         | No*                  |
++----------------------+----------------------+
+| suspend_filter       | Yes**                |
++----------------------+----------------------+
+| en_sw_gsr            | No*                  |
++----------------------+----------------------+
+| en_suspend           | Yes                  |
++----------------------+----------------------+
+| en_porb              | Yes*                 |
++----------------------+----------------------+
+| sw_clk               | Internalclk          |
++----------------------+----------------------+
+| sw_gwe_cycle         | 5*                   |
++----------------------+----------------------+
+| sw_gts_cycle         | 4*                   |
++----------------------+----------------------+
+| glutmask             | Yes*                 |
++----------------------+----------------------+
+| next_config_addr     | 0x000000             |
++----------------------+----------------------+
+| next_config_new_mode | No*                  |
++----------------------+----------------------+
+| next_config_boot_mode | 001*                 |
++----------------------+----------------------+
+| next_config_register_write | Enable*              |
++----------------------+----------------------+
+| ICAP_Enable          | Auto*                |
++----------------------+----------------------+
+| IEEE1532             | No*                  |
++----------------------+----------------------+
+| Binary               | No*                  |
++----------------------+----------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.  Please see the previously displayed
+individual error or warning messages for more details.
+Creating bit map...
+Saving bit stream in "viscy_routed.bit".
+Bitstream compression saved 637664 bits.
+Bitstream generation is complete.

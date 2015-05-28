@@ -1,0 +1,12 @@
+EN regfile NULL /rzhome/op/padminl/VISCY/workdir/hwsys/XST/regfile.vhdl sub00/vhpl07 1432811400
+AR regfile rtl /rzhome/op/padminl/VISCY/workdir/hwsys/XST/regfile.vhdl sub00/vhpl08 1432811401
+AR controller rtl /rzhome/op/padminl/VISCY/workdir/hwsys/XST/controller.vhdl sub00/vhpl10 1432811403
+EN ir NULL /rzhome/op/padminl/VISCY/workdir/hwsys/XST/ir.vhdl sub00/vhpl05 1432811398
+EN cpu NULL /rzhome/op/padminl/VISCY/workdir/hwsys/XST/CPU.vhdl sub00/vhpl00 1432811404
+AR pc rtl /rzhome/op/padminl/VISCY/workdir/hwsys/XST/pc.vhdl sub00/vhpl04 1432811397
+EN pc NULL /rzhome/op/padminl/VISCY/workdir/hwsys/XST/pc.vhdl sub00/vhpl03 1432811396
+AR cpu rtl /rzhome/op/padminl/VISCY/workdir/hwsys/XST/CPU.vhdl sub00/vhpl11 1432811405
+AR ir rtl /rzhome/op/padminl/VISCY/workdir/hwsys/XST/ir.vhdl sub00/vhpl06 1432811399
+EN controller NULL /rzhome/op/padminl/VISCY/workdir/hwsys/XST/controller.vhdl sub00/vhpl09 1432811402
+AR alu rtl /rzhome/op/padminl/VISCY/workdir/hwsys/XST/alu.vhdl sub00/vhpl02 1432811395
+EN alu NULL /rzhome/op/padminl/VISCY/workdir/hwsys/XST/alu.vhdl sub00/vhpl01 1432811394

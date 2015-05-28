@@ -1,0 +1,440 @@
+Release 10.1.03 - iMPACT K.39 (lin)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+Preference Table
+Name                 Setting             
+StartupClock         Auto_Correction     
+AutoSignature        False               
+KeepSVF              False               
+ConcurrentMode       False               
+UseHighz             False               
+ConfigOnFailure      Stop                
+UserLevel            Novice              
+MessageLevel         Detailed            
+svfUseTime           false               
+SpiByteSwap          Auto_Correction     
+>Cleaning all cable semaphores. Please wait.
+Reusing 78028001 key.
+ Removing semaphore, key = 0x78028001.
+Reusing FC028001 key.
+ Removing semaphore, key = 0xFC028001.
+Reusing 79028001 key.
+ Removing semaphore, key = 0x79028001.
+Reusing FD028001 key.
+ Removing semaphore, key = 0xFD028001.
+Reusing 7A028001 key.
+ Removing semaphore, key = 0x7A028001.
+Reusing FE028001 key.
+ Removing semaphore, key = 0xFE028001.
+Reusing 7B028001 key.
+ Removing semaphore, key = 0x7B028001.
+Reusing FF028001 key.
+ Removing semaphore, key = 0xFF028001.
+Reusing A0028001 key.
+ Removing semaphore, key = 0xA0028001.
+Reusing 24028001 key.
+ Removing semaphore, key = 0x24028001.
+ Removing semaphore, key = 0xA1028001.
+ Removing semaphore, key = 0x25028001.
+ Removing semaphore, key = 0xA2028001.
+ Removing semaphore, key = 0x26028001.
+ Removing semaphore, key = 0xA3028001.
+ Removing semaphore, key = 0x27028001.
+ Removing semaphore, key = 0xA4028001.
+ Removing semaphore, key = 0x28028001.
+ Removing semaphore, key = 0xA5028001.
+ Removing semaphore, key = 0x29028001.
+ Removing semaphore, key = 0xA6028001.
+ Removing semaphore, key = 0x2A028001.
+ Removing semaphore, key = 0xA7028001.
+ Removing semaphore, key = 0x2B028001.
+ Removing semaphore, key = 0xA8028001.
+ Removing semaphore, key = 0x2C028001.
+ Removing semaphore, key = 0xA9028001.
+ Removing semaphore, key = 0x2D028001.
+ Removing semaphore, key = 0xAA028001.
+ Removing semaphore, key = 0x2E028001.
+ Removing semaphore, key = 0xAB028001.
+ Removing semaphore, key = 0x2F028001.
+ Removing semaphore, key = 0xAC028001.
+ Removing semaphore, key = 0x30028001.
+ Removing semaphore, key = 0xAD028001.
+ Removing semaphore, key = 0x31028001.
+ Removing semaphore, key = 0xAE028001.
+ Removing semaphore, key = 0x32028001.
+ Removing semaphore, key = 0xAF028001.
+ Removing semaphore, key = 0x33028001.
+ Removing semaphore, key = 0xB0028001.
+ Removing semaphore, key = 0x34028001.
+ Removing semaphore, key = 0xB1028001.
+ Removing semaphore, key = 0x35028001.
+ Removing semaphore, key = 0xB2028001.
+ Removing semaphore, key = 0x36028001.
+ Removing semaphore, key = 0xB3028001.
+ Removing semaphore, key = 0x37028001.
+ Removing semaphore, key = 0xB4028001.
+ Removing semaphore, key = 0x38028001.
+ Removing semaphore, key = 0xB5028001.
+ Removing semaphore, key = 0x39028001.
+ Removing semaphore, key = 0xB6028001.
+ Removing semaphore, key = 0x3A028001.
+ Removing semaphore, key = 0xB7028001.
+ Removing semaphore, key = 0x3B028001.
+ Removing semaphore, key = 0xB8028001.
+ Removing semaphore, key = 0x3C028001.
+ Removing semaphore, key = 0xB9028001.
+ Removing semaphore, key = 0x3D028001.
+ Removing semaphore, key = 0xBA028001.
+ Removing semaphore, key = 0x3E028001.
+ Removing semaphore, key = 0xBB028001.
+ Removing semaphore, key = 0x3F028001.
+ Removing semaphore, key = 0xBC028001.
+ Removing semaphore, key = 0x40028001.
+ Removing semaphore, key = 0xBD028001.
+ Removing semaphore, key = 0x41028001.
+ Removing semaphore, key = 0xBE028001.
+ Removing semaphore, key = 0x42028001.
+ Removing semaphore, key = 0xBF028001.
+ Removing semaphore, key = 0x43028001.
+ Removing semaphore, key = 0xC0028001.
+ Removing semaphore, key = 0x44028001.
+ Removing semaphore, key = 0xC1028001.
+ Removing semaphore, key = 0x45028001.
+ Removing semaphore, key = 0xC2028001.
+ Removing semaphore, key = 0x46028001.
+ Removing semaphore, key = 0xC3028001.
+ Removing semaphore, key = 0x47028001.
+ Removing semaphore, key = 0xC4028001.
+ Removing semaphore, key = 0x48028001.
+ Removing semaphore, key = 0xC5028001.
+ Removing semaphore, key = 0x49028001.
+ Removing semaphore, key = 0xC6028001.
+ Removing semaphore, key = 0x4A028001.
+ Removing semaphore, key = 0xC7028001.
+ Removing semaphore, key = 0x4B028001.
+ Removing semaphore, key = 0xC8028001.
+ Removing semaphore, key = 0x4C028001.
+ Removing semaphore, key = 0xC9028001.
+ Removing semaphore, key = 0x4D028001.
+ Removing semaphore, key = 0xCA028001.
+ Removing semaphore, key = 0x4E028001.
+ Removing semaphore, key = 0xCB028001.
+ Removing semaphore, key = 0x4F028001.
+ Removing semaphore, key = 0xCC028001.
+ Removing semaphore, key = 0x50028001.
+ Removing semaphore, key = 0xCD028001.
+ Removing semaphore, key = 0x51028001.
+ Removing semaphore, key = 0xCE028001.
+ Removing semaphore, key = 0x52028001.
+ Removing semaphore, key = 0xCF028001.
+ Removing semaphore, key = 0x53028001.
+ Removing semaphore, key = 0xD0028001.
+ Removing semaphore, key = 0x54028001.
+ Removing semaphore, key = 0xD1028001.
+ Removing semaphore, key = 0x55028001.
+ Removing semaphore, key = 0xD2028001.
+ Removing semaphore, key = 0x56028001.
+ Removing semaphore, key = 0xD3028001.
+ Removing semaphore, key = 0x57028001.
+ Removing semaphore, key = 0xD4028001.
+ Removing semaphore, key = 0x58028001.
+ Removing semaphore, key = 0xD5028001.
+ Removing semaphore, key = 0x59028001.
+ Removing semaphore, key = 0xD6028001.
+ Removing semaphore, key = 0x5A028001.
+ Removing semaphore, key = 0xD7028001.
+ Removing semaphore, key = 0x5B028001.
+ Removing semaphore, key = 0xD8028001.
+ Removing semaphore, key = 0x5C028001.
+ Removing semaphore, key = 0xD9028001.
+ Removing semaphore, key = 0x5D028001.
+ Removing semaphore, key = 0xDA028001.
+ Removing semaphore, key = 0x5E028001.
+ Removing semaphore, key = 0xDB028001.
+ Removing semaphore, key = 0x5F028001.
+ Removing semaphore, key = 0xDC028001.
+ Removing semaphore, key = 0x60028001.
+ Removing semaphore, key = 0xDD028001.
+ Removing semaphore, key = 0x61028001.
+ Removing semaphore, key = 0xDE028001.
+ Removing semaphore, key = 0x62028001.
+ Removing semaphore, key = 0xDF028001.
+ Removing semaphore, key = 0x63028001.
+ Removing semaphore, key = 0xE0028001.
+ Removing semaphore, key = 0x64028001.
+ Removing semaphore, key = 0xE1028001.
+ Removing semaphore, key = 0x65028001.
+ Removing semaphore, key = 0xE2028001.
+ Removing semaphore, key = 0x66028001.
+ Removing semaphore, key = 0xE3028001.
+ Removing semaphore, key = 0x67028001.
+ Removing semaphore, key = 0xE4028001.
+ Removing semaphore, key = 0x68028001.
+ Removing semaphore, key = 0xE5028001.
+ Removing semaphore, key = 0x69028001.
+ Removing semaphore, key = 0xE6028001.
+ Removing semaphore, key = 0x6A028001.
+ Removing semaphore, key = 0xE7028001.
+ Removing semaphore, key = 0x6B028001.
+ Removing semaphore, key = 0xE8028001.
+ Removing semaphore, key = 0x6C028001.
+ Removing semaphore, key = 0xE9028001.
+ Removing semaphore, key = 0x6D028001.
+ Removing semaphore, key = 0xEA028001.
+ Removing semaphore, key = 0x6E028001.
+ Removing semaphore, key = 0xEB028001.
+ Removing semaphore, key = 0x6F028001.
+ Removing semaphore, key = 0xEC028001.
+ Removing semaphore, key = 0x70028001.
+ Removing semaphore, key = 0xED028001.
+ Removing semaphore, key = 0x71028001.
+ Removing semaphore, key = 0xEE028001.
+ Removing semaphore, key = 0x72028001.
+ Removing semaphore, key = 0xEF028001.
+ Removing semaphore, key = 0x73028001.
+ Removing semaphore, key = 0xF0028001.
+ Removing semaphore, key = 0x74028001.
+ Removing semaphore, key = 0xF1028001.
+ Removing semaphore, key = 0x75028001.
+ Removing semaphore, key = 0xF2028001.
+ Removing semaphore, key = 0x76028001.
+ Removing semaphore, key = 0xF3028001.
+ Removing semaphore, key = 0x77028001.
+ Removing semaphore, key = 0xF4028001.
+ Removing semaphore, key = 0x78028001.
+ Removing semaphore, key = 0xF5028001.
+ Removing semaphore, key = 0x79028001.
+ Removing semaphore, key = 0xF6028001.
+ Removing semaphore, key = 0x7A028001.
+ Removing semaphore, key = 0xF7028001.
+ Removing semaphore, key = 0x7B028001.
+ Removing semaphore, key = 0xF8028001.
+ Removing semaphore, key = 0x7C028001.
+ Removing semaphore, key = 0xF9028001.
+ Removing semaphore, key = 0x7D028001.
+ Removing semaphore, key = 0xFA028001.
+ Removing semaphore, key = 0x7E028001.
+ Removing semaphore, key = 0xFB028001.
+ Removing semaphore, key = 0x7F028001.
+ Removing semaphore, key = 0xFC028001.
+ Removing semaphore, key = 0x80028001.
+ Removing semaphore, key = 0xFD028001.
+ Removing semaphore, key = 0x81028001.
+ Removing semaphore, key = 0xFE028001.
+ Removing semaphore, key = 0x82028001.
+ Removing semaphore, key = 0xFF028001.
+ Removing semaphore, key = 0x83028001.
+ Removing semaphore, key = 0x28001.
+ Removing semaphore, key = 0x84028001.
+ Removing semaphore, key = 0x1028001.
+ Removing semaphore, key = 0x85028001.
+ Removing semaphore, key = 0x2028001.
+ Removing semaphore, key = 0x86028001.
+ Removing semaphore, key = 0x3028001.
+ Removing semaphore, key = 0x87028001.
+ Removing semaphore, key = 0x4028001.
+ Removing semaphore, key = 0x88028001.
+ Removing semaphore, key = 0x5028001.
+ Removing semaphore, key = 0x89028001.
+ Removing semaphore, key = 0x6028001.
+ Removing semaphore, key = 0x8A028001.
+ Removing semaphore, key = 0x7028001.
+ Removing semaphore, key = 0x8B028001.
+ Removing semaphore, key = 0x8028001.
+ Removing semaphore, key = 0x8C028001.
+ Removing semaphore, key = 0x9028001.
+ Removing semaphore, key = 0x8D028001.
+ Removing semaphore, key = 0xA028001.
+ Removing semaphore, key = 0x8E028001.
+ Removing semaphore, key = 0xB028001.
+ Removing semaphore, key = 0x8F028001.
+ Removing semaphore, key = 0xC028001.
+ Removing semaphore, key = 0x90028001.
+ Removing semaphore, key = 0xD028001.
+ Removing semaphore, key = 0x91028001.
+ Removing semaphore, key = 0xE028001.
+ Removing semaphore, key = 0x92028001.
+ Removing semaphore, key = 0xF028001.
+ Removing semaphore, key = 0x93028001.
+ Removing semaphore, key = 0x10028001.
+ Removing semaphore, key = 0x94028001.
+ Removing semaphore, key = 0x11028001.
+ Removing semaphore, key = 0x95028001.
+ Removing semaphore, key = 0x12028001.
+ Removing semaphore, key = 0x96028001.
+ Removing semaphore, key = 0x13028001.
+ Removing semaphore, key = 0x97028001.
+ Removing semaphore, key = 0x14028001.
+ Removing semaphore, key = 0x98028001.
+ Removing semaphore, key = 0x15028001.
+ Removing semaphore, key = 0x99028001.
+ Removing semaphore, key = 0x16028001.
+ Removing semaphore, key = 0x9A028001.
+ Removing semaphore, key = 0x17028001.
+ Removing semaphore, key = 0x9B028001.
+ Removing semaphore, key = 0x18028001.
+ Removing semaphore, key = 0x9C028001.
+ Removing semaphore, key = 0x19028001.
+ Removing semaphore, key = 0x9D028001.
+ Removing semaphore, key = 0x1A028001.
+ Removing semaphore, key = 0x9E028001.
+ Removing semaphore, key = 0x1B028001.
+ Removing semaphore, key = 0x9F028001.
+ Removing semaphore, key = 0x1C028001.
+ Removing semaphore, key = 0xA0028001.
+ Removing semaphore, key = 0x1D028001.
+ Removing semaphore, key = 0xA1028001.
+ Removing semaphore, key = 0x1E028001.
+ Removing semaphore, key = 0xA2028001.
+ Removing semaphore, key = 0xB4028001.
+ Removing semaphore, key = 0x38028001.
+ Removing semaphore, key = 0xB5028001.
+ Removing semaphore, key = 0x39028001.
+ Removing semaphore, key = 0xB6028001.
+ Removing semaphore, key = 0x3A028001.
+ Removing semaphore, key = 0xB7028001.
+ Removing semaphore, key = 0x3B028001.
+>>AutoDetecting cable. Please wait.
+ OS platform = i686.
+Connecting to cable (Parallel Port - parport0).
+ Linux release = 3.2.0-4-686-pae.
+WARNING:iMPACT -  Module windrvr6 is not loaded. Please reinstall the cable
+   drivers. See Answer Record 22648.
+Cable connection failed.
+ OS platform = i686.
+Connecting to cable (Parallel Port - parport1).
+ Linux release = 3.2.0-4-686-pae.
+WARNING:iMPACT -  Module windrvr6 is not loaded. Please reinstall the cable
+   drivers. See Answer Record 22648.
+Cable connection failed.
+ OS platform = i686.
+Connecting to cable (Parallel Port - parport2).
+ Linux release = 3.2.0-4-686-pae.
+WARNING:iMPACT -  Module windrvr6 is not loaded. Please reinstall the cable
+   drivers. See Answer Record 22648.
+Cable connection failed.
+ OS platform = i686.
+Connecting to cable (Parallel Port - parport3).
+ Linux release = 3.2.0-4-686-pae.
+WARNING:iMPACT -  Module windrvr6 is not loaded. Please reinstall the cable
+   drivers. See Answer Record 22648.
+Cable connection failed.
+ OS platform = i686.
+ Using libusb.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+File version of /opt/xilinx-ise-10_1_foundation/ISE/bin/lin/xusbdfwu.hex = 1030.
+File version of /usr/share/xusbdfwu.hex = 1030.
+ Using libusb.
+ Max current requested during enumeration is 74 mA.
+Type = 0x0004.
+ Cable Type = 3, Revision = 0.
+ Setting cable speed to 6 MHz.
+Cable connection established.
+Firmware version = 1303.
+File version of /opt/xilinx-ise-10_1_foundation/ISE/data/xusb_xlp.hex = 1303.
+Firmware hex file version = 1303.
+PLD file version = 0012h.
+ PLD version = 0012h.
+>Identifying chain contents ....'1': : Manufacturer's ID =Xilinx xcf04s, Version : 13
+INFO:iMPACT:1777 - 
+   Reading /opt/xilinx-ise-10_1_foundation/ISE/xcf/data/xcf04s.bsd...
+INFO:iMPACT:501 - '1': Added Device xcf04s successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+'2': : Manufacturer's ID =Xilinx xc3s700a, Version : 2
+INFO:iMPACT:1777 - 
+   Reading /opt/xilinx-ise-10_1_foundation/ISE/spartan3a/data/xc3s700a.bsd...
+INFO:iMPACT:501 - '1': Added Device xc3s700a successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+done.
+Elapsed time =      0 sec.
+Elapsed time =      0 sec.
+>Elapsed time =      0 sec.
+Elapsed time =      0 sec.
+>-------------------------------------------------------------------
+Mode BS
+----------------------------------------------------------------------
+Position	PartName           Version 	FileName            
+1       	xc3s700a           2       	NOT YET ASSIGNED    
+2       	xcf04s             13      	NOT YET ASSIGNED    
+----------------------------------------------------------------------
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+Mode SS
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+Mode SM
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+Mode HW140
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+Mode SPI
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+Mode AceCF:
+Name: 
+Path: /rzhome/op/padminl/VISCY/workdir/hwsys/XST/
+Size: 0
+Reserved Size: 
+Active collection 
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+Mode AceMPM:
+Name 
+Path: /rzhome/op/padminl/VISCY/workdir/hwsys/XST/
+Size: 0
+Reserved Size: 
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+Mode PFF:
+Submode 0:
+Name: 
+Path: /rzhome/op/padminl/VISCY/workdir/hwsys/XST/
+Size: 0
+Auto Size: 
+File Format: mcs
+Direction: UP
+Compressed: 
+Swap Bit: TRUE
+Multiboot: 
+SPI Selected: 
+Prom Chain
+-------------------------------------------------------------------
+>'1': Loading file 'viscy.bit' ...
+done.
+----------------------------------------------------------------------
+INFO:iMPACT:501 - '1': Added Device xc3s700a successfully.
+----------------------------------------------------------------------
+----------------------------------------------------------------------
+>Maximum TCK operating frequency for this device chain: 10000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+'1': Programming device...
+done.
+'1': Reading status register contents...
+CRC error                                         :         0
+IDCODE not validated while writing FDRI           :         0
+DCM Locked                                        :         1
+status of GTS_CFG_B                               :         1
+status of GWE                                     :         1
+status of GHIGH                                   :         1
+value of VSEL pin 0                               :         1
+value of VSEL pin 1                               :         1
+value of VSEL pin 2                               :         1
+value of MODE pin M0                              :         1
+value of MODE pin M1                              :         0
+value of MODE pin M2                              :         1
+value of CFG_RDY (INIT_B)                         :         1
+DONEIN input from Done Pin                        :         1
+POST_CRC_ERR error                                :         0
+SYNC word not found                               :         0
+INFO:iMPACT:2219 - Status register values:
+INFO:iMPACT - 0011 1111 1101 1100 
+INFO:iMPACT:579 - '1': Completed downloading bit file to device.
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+Elapsed time =      1 sec.
+>----------------------------------------------------------------------
+----------------------------------------------------------------------

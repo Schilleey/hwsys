@@ -1,0 +1,6 @@
+vhdl work CPU.vhdl
+vhdl work alu.vhdl
+vhdl work regfile.vhdl
+vhdl work ir.vhdl
+vhdl work pc.vhdl
+vhdl work controller.vhdl
