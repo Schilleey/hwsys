@@ -103,7 +103,7 @@ architecture RTL of CPU is
 	signal c_mem_rd, c_mem_wr: std_logic;
 	
 	-- Memory
-	signal mem_data_in, mem_data_out: std_logic_vector (15 downto 0);
+	signal mem_data_out: std_logic_vector (15 downto 0);
 
 begin
 	-- Component instatiations...
@@ -202,7 +202,7 @@ begin
 		end if;
 	end process;
 	
-	mem_data_in <= data; -- Dateneingang
+
 	mem_data_out <= regfile_out1_data; -- Datenausgang
 	wr <= c_mem_wr; --?? weiterleitung an CPU Ausgang
 	rd <= c_mem_rd; --??
